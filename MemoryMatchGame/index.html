@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Match Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="game">
+        <h1>🧠 Memory Match Game</h1>
+
+        <div id="stats">
+          ⏱ Time: <span id="time">0</span>s | 🧮 Attempts:
+          <span id="attempts">0</span>
+        </div>
+
+        <p id="best-score">
+          🏆 Best Time: <span id="bestTime">--</span>s | Best Attempts:
+          <span id="bestAttempts">--</span>
+        </p>
+
+        <div id="game-board" class="game-board"></div>
+
+        <p id="status"></p>
+
+        <button id="restart-btn">🔄 Restart Game</button>
+      </div>
+      <div id="instructions">
+        <h2>📝 How to Play</h2>
+
+        <ol>
+          <li>Flip over two cards at a time by clicking them.</li>
+          <li>If the cards match, they stay revealed.</li>
+          <li>If they don’t match, they will flip back.</li>
+          <li>Match all 8 pairs to win the game!</li>
+        </ol>
+        <p>
+          💡Try to finish with the fewest attempts and in the shortest time.
+        </p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

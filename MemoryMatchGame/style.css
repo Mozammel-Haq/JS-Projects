@@ -1,0 +1,110 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f3f3f3;
+}
+
+h1 {
+  border-bottom: 3px solid #2ecc71;
+  margin: 2rem auto;
+  padding: 1rem 0;
+  color: #444;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 4rem;
+}
+#game {
+  flex: 1;
+  background: #ebf1ff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#instructions {
+  /* text-align: left; */
+  width: 450px;
+  height: 450px;
+  margin: 10px auto;
+  background: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+#stats,
+#best-score,
+#status {
+  margin: 10px;
+  font-size: 18px;
+}
+
+.game-board {
+  width: 700px;
+  margin: 20px auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 80px);
+  gap: 10px;
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  background: #1e90ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.card.matched {
+  background: #2ecc71;
+  cursor: default;
+}
+
+.card.hidden {
+  background: #ccc;
+  color: transparent;
+}
+
+.card:active {
+  transform: scale(0.95);
+}
+
+#restart-btn {
+  padding: 8px 16px;
+  margin: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#instructions h2 {
+  text-align: center;
+  border-bottom: 3px solid #2ecc71;
+  margin: 0 auto 2rem;
+  padding: 1rem 0;
+  color: #444;
+}
+#instructions ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 50px;
+  list-style-type: lower-roman;
+}
+#instructions p {
+  text-align: center;
+}
