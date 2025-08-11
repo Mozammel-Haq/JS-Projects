@@ -67,7 +67,7 @@ h2 {
   display: flex;
   flex-direction: column;
   transition: transform 0.2s ease;
-  max-height: 400px;
+  height: fit-content;
 }
 .product-card:hover {
   transform: translateY(-6px);
